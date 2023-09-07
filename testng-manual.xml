@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testng-manual.xml - All Test Suite">
+    <test verbose="2" preserve-order="true" name="Test with Parameter">
+        <parameter name="search_query" value="bmm"/>
+        <classes>
+            <class name="tests.GoogleSearchNew">
+                <methods>
+                    <include name="testGoogleSearchDirect"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Test without Parameter">
+        <classes>
+            <class name="tests.GoogleSearchNew">
+                <methods>
+                    <include name="testGoogleSearchDirect"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

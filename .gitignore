@@ -1,0 +1,12 @@
+/target/
+debug.log
+/test-output/
+/.allure/
+/surefire-reports/
+.settings/
+.classpath
+.project
+.idea
+amountcheck.txt
+false
+firefoxLogs

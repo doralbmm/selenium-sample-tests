@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testng.xml - All Test Suite">
+    <test preserve-order="true"
+          name="GoogleSearch Tests">
+        <classes>
+            <class name="tests.GoogleSearch">
+                <methods>
+                    <include name="testGoogleSearchDirect"/>
+                    <include name="testGoogleSearchCurrent"/>
+                    <include name="testGoogleSearchCurrentShortDSL"/>
+                    <include name="testGoogleSearchPageObject"/>
+                    <include name="testGoogleSearchPageDSL"/>
+                    <include name="testGoogleSearchPageFluent"/>
+                    <include name="testGoogleSearchPageFluentDSL"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test preserve-order="true"
+          name="GoogleSearchNew Tests">
+        <classes>
+            <class name="tests.GoogleSearchNew">
+                <methods>
+                    <include name="testGoogleSearchDirect"/>
+                    <include name="testGoogleSearchCurrent"/>
+                    <include name="testGoogleSearchCurrentShortDSL"/>
+                    <include name="testGoogleSearchPageObject"/>
+                    <include name="testGoogleSearchPageDSL"/>
+                    <include name="testGoogleSearchPageFluent"/>
+                    <include name="testGoogleSearchPageFluentDSL"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
